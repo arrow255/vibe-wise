@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vibe-wise-codex",
+  "version": "0.1.43-codex.1",
+  "description": "Learn software design while Codex or ChatGPT Work writes the agreed implementation.",
+  "author": {
+    "name": "VibeWise contributors"
+  },
+  "repository": "https://github.com/arrow255/vibe-wise",
+  "license": "MIT",
+  "keywords": ["learning", "architecture", "engineering", "codex"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "VibeWise for Codex",
+        "shortDescription": "Learn as you build software",
+        "longDescription": "Lead the design, examine tradeoffs, and learn how the system works while the coding agent implements your decisions.",
+        "developerName": "VibeWise contributors",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Write"],
+        "brandColor": "#3B82F6",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png",
+        "defaultPrompt": [
+          "Use VibeWise to help me learn while we build this project.",
+          "Resume my VibeWise learning notes in this project."
+        ]
+      }
+    }
+  }
+}
